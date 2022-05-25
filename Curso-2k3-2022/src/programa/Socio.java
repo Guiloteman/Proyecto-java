@@ -1,16 +1,21 @@
 package programa;
 
-public class Socio extends Persona{
-  private int nroSocio;
+public class Socio extends Persona {
+    private int numero;
 
-    public Socio(int nroSocio, String nombre, int dni, String domicilio, int telefono, int edad) {
+    public Socio(int numero, String nombre, int dni, String domicilio, int telefono, int edad) {
         super(nombre, dni, domicilio, telefono, edad);
-        this.nroSocio = nroSocio;
-        mostrar();
+        this.numero = numero;
     }
 
-    public void mostrar(){
-        System.out.println("Numero de socio: " + nroSocio + "\tNombre: " + getNombre() + "\tNumero de DNI: " + getDni() + "\tDomicilio: " + getDomicilio() + "\tNumero de Telefono: " + getTelefono());
+    @Override
+    public String toString() {
+        return String.format("Numero: %d, Nombre: %s, Dni: %d, Edad: %d, Domicilio: %s, Telefono: %d",
+                numero,
+                getNombre(),
+                getDni(),
+                getEdad(),
+                getDomicilio(),
+                getTelefono());
     }
-
 }
