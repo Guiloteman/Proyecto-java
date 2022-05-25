@@ -3,16 +3,17 @@ package programa;
 import java.util.ArrayList;
 
 public class Club {
-  private String nom;
-  private ArrayList<Socio> socios= new ArrayList<>();
+    private String nombre;
 
-    public Club(String nom) {
-        this.nom = nom;
+    private ArrayList<Socio> socios = new ArrayList<>();
+
+    public Club(String nombre) {
+        this.nombre = nombre;
     }
 
-void agregarSocio(Socio socio){
-  socios.add(socio);
-}
+    void agregarSocio(Socio socio) {
+        socios.add(socio);
+    }
 
-    
+
 }

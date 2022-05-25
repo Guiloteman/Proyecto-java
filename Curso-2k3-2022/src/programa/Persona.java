@@ -1,11 +1,11 @@
 package programa;
 
 public class Persona {
-  private String nombre;
-  private int dni;
-  private String domicilio;
-  private int telefono;
-  private int edad;
+    private String nombre;
+    private int dni;
+    private String domicilio;
+    private int telefono;
+    private int edad;
 
     public Persona(String nombre, int dni, String domicilio, int telefono, int edad) {
         this.nombre = nombre;
@@ -56,8 +56,8 @@ public class Persona {
     }
 
     @Override
-    public String toString(){
-      return "Nombre: " + this.nombre + "\tNumero de DNI: " + this.dni + "\tDomicilio: " + this.domicilio + "\tNumero de Telefono: " + this.telefono + "\tEdad: " + this.edad;
-}
+    public String toString() {
+        return "Nombre: " + this.nombre + "\tNumero de DNI: " + this.dni + "\tDomicilio: " + this.domicilio + "\tNumero de Telefono: " + this.telefono + "\tEdad: " + this.edad;
+    }
 
 }
